@@ -1,0 +1,150 @@
+﻿@using JA.Helpers
+
+@*http://rdonfack.developpez.com/tutoriels/dotnet/creation-pages-web-asp-net-utilisant-moteur-vue-razor/?page=page_6*@
+
+@helper Technos()
+{
+    <ul>
+        <li>Visual Studio 2013 Ultimate</li>
+        <li>ASP.NET MVC5</li>
+        <li>Data base first</li>
+        <li>WebAPI2</li>
+        <li>Bootstrap 3</li>
+        <li>Razor</li>
+        <li>Razor helpers (Extension method & Declarative)</li>
+        <li>Annotation and filters (CustomFiltersAttributes)</li>
+        <li>Elmah, log4net, Glimpse and rotativa for pdf support</li>
+        <li>Styles for printing</li>
+        <li>System diagnostics trace</li>
+        <li>JQuery</li>
+        <li>Ajax</li>
+        <li>Internationalization (us for neutral, fr)</li>
+        <li>web.Config transformation</li>
+        <li>Error Handling</li>
+        <li>Helpers for tracing</li>
+        <li>Carousel</li>
+        <li>Area (Administration with page protected: user="admin" / pasword=p@ssword</li>
+        <li>ASP.NET Identity  (with extension and users management) </li>
+        <li>File upload for user photo and validation [ValidateFile]</li>
+        <li> Code snippets</li>
+        <li>Razor EditorTemplate</li>
+        <li>Googlemaps</li>
+        <li>HTML5 Video</li>
+    </ul>
+
+}
+@helper FixTab()
+{
+    <div class="hidden-xs  uv-tab">
+        <a class="uv-tab-label" href="https://acdfcasaV2.codeplex.com/discussions" target="_blank">
+            <img style="border:0; background-color: transparent; padding:0; margin:0;" title="Give us feedback" alt="Feedback" src="~/Content/images/feedback-tab.png">
+        </a>
+    </div>
+}
+@helper FixTabTop()
+{
+    <div id="back-top">
+        <a href="#top" title="GO TOP"><span></span></a>
+    </div>
+}
+@helper AddThis()
+{
+    <!-- AddThis Button BEGIN -->
+    <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-5316de7341cbf6b7"> <i class="fa fa-share-square-o"></i></a>
+    <script type="text/javascript">var addthis_config = { "data_track_addressbar": true };</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5316de7341cbf6b7"></script>
+    <!-- AddThis Button END -->
+}
+@helper FooterInformations()
+{
+    <div id="footer" class="footer">
+        <div class="bottom-line" style="font-size:smaller">
+            <div class="col-lg-6 col-xs-9">
+                <i class="fa fa-envelope-o"></i> <a  href="mailto:foucauld.casa@live.fr">foucauld.casa@live.fr</a>
+            </div>
+            <div class="col-lg-6 col-xs-3">
+                @*<div class="pull-right"><i class="fa fa-facebook-square fa-fw"></i><i class="fa fa-twitter-square fa-fw"></i><i class="fa fa-google-plus-square fa-fw"></i></div>*@
+            </div>
+        </div>
+        <div>
+            <div class="col-sm-4 hidden-xs">
+                <img id="footerImage" class="thumbnailImage" title="ACDF-Casablanca-Maroc" alt="ACDF" src="~/Content/images/Identity.png" width="150">
+            </div>
+            <div class="col-sm-4">
+                <div class="footerText1 hidden-xs text-muted">
+                    Company: @Utils.GetConfigCompanyName()<br />
+                    App: @Utils.GetAssemblyProduct() |
+                    Design: @Utils.GetAssemblyCompany() |
+                    @Utils.GetAssemblyCopyright()<br />
+                    [User: @Utils.GetUserName()][Culture: @Utils.GetCulture()][UIculture: @Utils.GetUiCulture()]<br />
+                </div>
+                <div class="footerText2 text-muted">
+                    Version: @Utils.GetAssemblyVersion() | File: @Utils.GetAssemblyInformationnalVersion()
+                </div>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </div>
+}
+        }
+@helper DevFooterInformations()
+{
+    <div class="well well-sm">
+        <div class="text-info" style="text-align:left;font-size:smaller;font-style:italic">Use:  &lt;add key=&quot;ShowDemoExceptionLinks&quot; value=&quot;false&quot; /&gt; in Web.Config to configure.</div>
+        <div class="text-danger" style="text-align:left;font-size:smaller">
+            * Status: @Utils.GetApplicationStatus() |
+            Compilation Mode: @Utils.GetCompilationMode() |
+            IsDebuggingEnabled: @Utils.IsDebuggingEnabled() |
+            IsAspNetTraceEnabled: @Utils.IsAspNetTraceEnabled() |
+            CustomErrorEnabled: @Utils.IsCustomErrorEnabled()<br />
+            * NORTHWNDEntities: @Utils.GetCnxNORTHWNDEntities()<br />
+            * DefaultConnection: @Utils.GetCnxDefaultConnection()
+        </div>
+    </div>
+}
+@helper AdminInformations()
+{
+    <h3>Admin informations</h3>
+    <div class="container body-content">
+        <p class="text-info">
+            <h4>Footer</h4>
+            @FooterInformations()
+            <h4>Dev Footer</h4>
+            @DevFooterInformations()
+            <h4>Application status</h4>
+            [Status: @Utils.GetApplicationStatus()]
+            <h4>Compilation mode</h4>
+            [Compilation Mode: @Utils.GetCompilationMode()]<br />
+            <h4>Debug</h4>
+            [IsDebuggingEnabled: @Utils.IsDebuggingEnabled()]
+            <h4>Trace</h4>
+            [IsAspNetTraceEnabled: @Utils.IsAspNetTraceEnabled()]
+            <h4>Custom error</h4>
+            [CustomErrorEnabled: @Utils.IsCustomErrorEnabled()]<br />
+            <h4>ConnectionString</h4>
+            [NORTHWNDEntities: @Utils.GetCnxNORTHWNDEntities()]<br />
+            [DefaultConnection: @Utils.GetCnxDefaultConnection()]<br />
+        </p>
+        <h4>IIS Server Variables</h4>
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <tr>
+                <td>Key</td>
+                <td>Value</td>
+            </tr>
+            @foreach (string key in Request.ServerVariables.Keys)
+            {
+                var value = Request.ServerVariables[key];
+                <tr>
+                    <td>@key</td>
+                    <td>@value</td>
+                </tr>
+            }
+        </table>
+    </div>
+
+}
+@helper TagImage(string imgClass, byte[] picture, string imgTitle, string imgAlt, string imgBorder)
+{
+    <img class=@imgClass src=@Utils.ByteToStringImage(picture) title=@imgTitle alt=@imgAlt border=@imgBorder />
+}

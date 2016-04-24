@@ -1,0 +1,49 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    //// - [10003] use Pseudo as ViewName, UserName is ReadOnly
+    //// http://www.itorian.com/2013/11/customize-users-profile-in-aspnet.html
+    //var userManager = new UserManager<Me.AspNet.Identity.Models.ApplicationUser>
+    //    (new Microsoft.AspNet.Identity.EntityFramework.UserStore<Me.AspNet.Identity.Models.ApplicationUser>
+    //    (new Me.AspNet.Identity.Models.ApplicationDbContext()));
+
+    //// Get the current logged in User and look up the user in ASP.NET Identity
+    //var currentUser = userManager.FindById(User.Identity.GetUserId());
+
+    //// - [10010] - ADD: Avatar in _LoginPartial
+    //var image = "";
+
+    //if (currentUser.AvatarUrl != null)
+    //{
+    //    image = currentUser.AvatarUrl;
+    //}
+    //else
+    //{
+    //    image = "~/Content/Avatars/BlankPhoto.jpg";
+    //}
+
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+    @Html.AntiForgeryToken()
+
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @*@Html.ActionLink("Bonjour " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
+            @*@Html.ActionLink( currentUser.Pseudo, "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })*@
+            @*- [10010] - ADD: Avatar in _LoginPartial*@
+            <a href="@Url.Action("Index", "Manage")" title="Manage" , rel="nofollow">
+                @*- [10015] - MODIF: _LoginPartial and _Layout*@
+                Votre compte ACDF
+            </a>
+        </li>
+        <li><a title="Disconnect" href="javascript:document.getElementById('logoutForm').submit()">Déconnexion</a></li>
+    </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Inscription", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" , @class = "" })</li>
+        <li>@Html.ActionLink("Connexion", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "" })</li>
+    </ul>
+}

@@ -1,0 +1,74 @@
+﻿@using JA.Helpers
+@{
+    ViewBag.Title = "Contact";
+}
+@section scripts{
+    @Scripts.Render("~/bundles/fancybox")
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=@Utils.GetGoogleMapKey()"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fancybox-media").fancybox({
+                openEffect: 'none',
+                closeEffect: 'none',
+                helpers: {
+                    media: {}
+                }
+            });
+
+            var geocoder = new google.maps.Geocoder();
+            var infowindow = new google.maps.InfoWindow();
+            var mapOptions = {
+                scrollwheel: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                zoom: 15,
+            }
+            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            var address = $('address').text();
+
+            geocoder.geocode({ 'address': address }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    map.setCenter(results[0].geometry.location);
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location
+                    });
+                    infowindow.setContent(results[0].formatted_address);
+                    infowindow.open(map, marker);
+                } else {
+                    alert("Geocode was not successful for the following reason: " + status);
+                }
+            });
+
+            //Convert address tags to google map links - Copyright Michael Jasper 2011
+            $('address').each(function () {
+                var link = "<a href='http://maps.google.com/maps?q=" + encodeURIComponent($(this).text()) + "' target='_blank'>" + $(this).text() + "</a>";
+                $(this).html(link + ' <i class="fa fa-external-link"></i>');
+            });
+        });
+    </script>
+}
+
+
+<h2>@ViewBag.Title.</h2>
+
+<!-- container -->
+<div class="container">
+    <label>@Utils.GetConfigCompanyName()</label>
+    <address title="Click to see more details">@Utils.GetConfigCompanyAddress()</address>
+    <abbr title="Tel">P:</abbr>
+    + 212 522 86 01 22<br />
+    <abbr title="Tel. Collège">PC:</abbr>
+    +212 522 86 55 76<br />
+    <strong>Site Web: </strong><a href="http://www.foucauld-casa.org" target="_blank">www.foucauld-casa.org</a> <i class="fa fa-external-link"></i><hr />
+    <label>Google maps</label>
+    <ul>
+        <li><a class="fancybox-media" href="https://maps.google.com/maps?q=115+Boulevard+Moulay+Idriss+I,+Casablanca,+Grand+Casablanca,+Morocco&t=h&z=17">Search results</a> <i class="fa fa-external-link"></i></li>
+        <li><a class="fancybox-media" href="https://maps.google.com/maps?ll=33.572099,-7.618214&z=17&t=h&q=115+Boulevard+Moulay+Idriss+I+Dar-el-Beida+Morocco">Direct link</a> <i class="fa fa-external-link"></i></li>
+    </ul>
+    @*Company Google map based on address tag*@
+    <div id="map-canvas" class="span12" style="display:block;height:400px;"></div>
+    <hr />
+
+    <strong>Support:</strong><a href="mailto:foucauld.casa@live.fr">foucauld.casa@live.fr</a> <i class="fa fa-envelope-o"></i><br />
+</div><!-- container -->

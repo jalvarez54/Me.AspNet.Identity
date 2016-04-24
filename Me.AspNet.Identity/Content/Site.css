@@ -1,0 +1,469 @@
+﻿/*!
+ * Start Bootstrap - SB Admin 2 Bootstrap Admin Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* CUSTOMIZE ELEMENTS 
+-------------------------------------------------- */
+#externalImg{
+    border: 2px solid blue;
+}
+#manageImg{
+    border: 2px solid blue;
+}
+.linkPhoto{
+    font-size:smaller;
+}
+.numPhoto{
+    font-size:smaller;
+    color:blue;
+}
+.photoWidth{
+    max-width: 100px;
+}
+/* CUSTOMIZE CONTAINER 
+-------------------------------------------------- */
+.container{
+    padding:10px 10px 10px 0px;
+    margin-left: 0px;
+    margin-right: 35px;
+    width: auto;
+}
+
+/* WRAPPER 
+-------------------------------------------------- */
+#wrapper {
+    width: 100%;
+    /*background-color:antiquewhite;*/
+}
+
+/* PAGE-WRAPPER 
+-------------------------------------------------- */
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        padding: 0 30px;
+        border-left: 1px solid #e7e7e7;
+    }
+}
+
+/* NAVBAR antiquewhite
+-------------------------------------------------- */
+/*.navbar {
+    background-color:#3c8dbc;
+}*/
+.navbar-top-links {
+    margin-right: 0;
+}
+
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+}
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
+
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+
+.navbar-top-links .dropdown-messages {
+    left: 0;
+    right: auto;
+}
+
+.navbar-top-links .dropdown-messages {
+    margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+    margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+    margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: -40px;
+}
+.nav-header{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.sidebar .sidebar-nav{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* SIDEBAR 
+-------------------------------------------------- */
+/*.sidebar {
+    background-color:antiquewhite;
+}*/
+.sidebar .sidebar-search {
+    padding: 15px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar ul li a.active {
+    background-color: #eee;
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+.sidebar .fa.arrow:before {
+    content: "\f104";
+}
+
+.sidebar .active>a>.fa.arrow:before {
+    content: "\f107";
+}
+
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li {
+    border-bottom: 0!important;
+}
+
+.sidebar .nav-second-level li a {
+    padding-left: 37px;
+}
+
+.sidebar .nav-third-level li a {
+    padding-left: 52px;
+}
+
+@media(min-width:768px) {
+    .sidebar {
+        z-index: 1;
+        position: absolute;
+        width: 250px;
+        margin-top: 51px;
+    }
+
+    .navbar-top-links .dropdown-messages {
+        margin-left: auto;
+    }
+}
+
+/* FOOTER 
+-------------------------------------------------- */
+.bottom-line {
+    padding:30px;
+}
+
+.footer {
+    background: none repeat scroll 0 0 #EDEDED;
+    position: relative;
+    transition: all 0.2s ease 0s;
+}
+.footer .bottom-line {
+    background: none repeat scroll 0 0 #333333;
+    border-bottom: 2px solid #CCCCCC;
+    border-top: 2px solid #555555;
+    clear: both;
+    color: #F7F7F7;
+    margin: 0 0 0 0;
+    padding-top: 0.71em;
+}
+.bottom-line a:link{
+text-decoration: none;
+    color:#F7F7F7;
+}
+.bottom-line a:visited{
+text-decoration: none;
+    color:#0094DE;
+}
+.bottom-line a:hover{
+    color:#fa1405;
+}
+.footerText1 {
+    text-align:center;
+    font-size:smaller;
+    margin-top:12px;
+}
+.footerText2{
+    text-align: center;
+     font-size: smaller;
+} 
+
+
+/* CUSTOMIZE NAVBAR-BRAND IMG
+-------------------------------------------------- */
+#NavBarBrandImage {
+    border:0;
+    background-color: transparent;
+    padding:2px 0 0 2px;
+    margin:0;
+    max-height:45px;
+}
+
+/* FOOTER IMG
+-------------------------------------------------- */
+.thumbnailImage{
+    border:0;
+    background-color: transparent;
+    padding:12px;
+    margin:0;
+}
+
+/* CUSTOMIZE JUMBOTRON
+-------------------------------------------------- */
+.jumbotron {
+    margin-top: 30px;
+}
+
+/* CUSTOMIZE FEEDBACK
+-------------------------------------------------- */
+.uv-tab-label {
+    background-color: transparent;
+    display: block;
+    padding: 6px 10px 2px 42px;
+    text-decoration: none;
+}
+.uv-tab {
+    position: fixed;
+    z-index: 9999;
+    border: 1px solid #FFF;
+    border-bottom: none;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    background: red url(images/tab-horizontal-dark.png) 0 50% no-repeat;
+    background-color: #999999;
+    -moz-box-shadow: inset rgba(255,255,255,.25) 1px 1px 1px, rgba(0,0,0,.5) 0 1px 2px;
+    -webkit-box-shadow: inset rgba(255,255,255,.25) 1px 1px 1px, rgba(0,0,0,.5) 0 1px 2px;
+    box-shadow: inset rgba(255,255,255,.25) 1px 1px 1px, rgba(0,0,0,.5) 0 1px 2px;
+    font: normal normal bold 14px/1em Arial, sans-serif;
+    right: 45px;
+    bottom: 0%;
+    transform: rotate(0deg);
+    transform-origin: right top 0;
+}
+
+/* CUSTOMIZE TAB & TOP
+-------------------------------------------------- */
+#back-top {
+    z-index: 9999;
+    position: fixed;
+    bottom: 0%;
+    right: 1px;
+}
+#back-top a {
+    /*width: 20px;*/
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999999;
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover {
+    color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-bottom: 7px;
+    background: #999999 url(images/up-arrow.png) no-repeat center center;
+
+    /* rounded corners */
+    -webkit-border-radius: 5px; 5px;
+    -moz-border-radius: 5px; 5px; 5px;
+    border-radius: 5px;
+
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover span {
+    background-color: #777;
+}
+
+/* CUSTOMIZE BUTTON
+-------------------------------------------------- */
+.btn {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/*.btn-default {
+    border: 1px solid #ffd800;
+    color: #d8bc22;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #ffd800;
+    outline: 0;
+    color: #000;
+    background-color: #ffd800;
+}*/
+
+.btn-huge {
+    padding: 25px;
+    font-size: 26px;
+}
+/* CUSTOMIZE FLEX
+-------------------------------------------------- */
+.flex-direction-nav a:before  { font-family:FontAwesome; font-size: 30px; display: inline-block; content: '\f137'; }
+.flex-direction-nav a.flex-next:before  { content: '\f138'; }
+
+.flexslider .slides > li {
+    position: relative;
+}
+.flex-containerHome {
+    position: relative;
+    border-radius: 5px;
+    max-width:1000px;
+    margin:0px 0px 50px 0px;
+}
+.flexslider{
+    margin:5px;
+    border: 2px solid #f8f8f8
+}
+.flex-caption {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+    top:10px;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family:'Comic Sans MS';
+    left: 0;
+    line-height: 18px;
+    padding: 2%;
+    position: absolute;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    text-align:center;
+    width: 100%;
+}
+.flex-caption-home {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+    top:10px;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family:'Comic Sans MS';
+    left: 0;
+    line-height: 18px;
+    padding: 2%;
+    position: absolute;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    text-align:center;
+    width: 100%;
+}
+.flex-caption-thumbnail {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+    top:0px;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-family:'Comic Sans MS';
+    left: 0;
+    line-height: 18px;
+    padding: 2%;
+    position: absolute;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    text-align:center;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('eot'),
+        url('../fonts/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* CUSTOMIZE TABLES
+-------------------------------------------------- */
+table.tablesorter thead tr .header {
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp {
+    background-image: url(images/asc.gif);
+}
+
+table.tablesorter thead tr .headerSortDown {
+    background-image: url(images/desc.gif);
+}
+
+/* CUSTOMIZE TEXTAREA
+-------------------------------------------------- */
+.textareaContainer {
+    border: 1px solid #999;
+    padding: 20px;
+}
+textarea {
+    width: 100%;
+}
+.border-box {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+.content-box {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -o-box-sizing: content-box;
+}
+
+

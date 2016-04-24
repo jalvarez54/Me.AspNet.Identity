@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<!-- container -->
+<div class="container">
+
+    <!--  main row -->
+    <div class="row">
+
+        <!-- left col -->
+        <div class="col-lg-8 col-sm-12">
+            @Html.Partial("_PanelUsagePartial")
+        </div><!-- left col -->
+        <!-- right col -->
+        <div class="col-lg-4 col-sm-12">
+        </div><!-- right col -->
+
+    </div><!-- main row -->
+
+</div><!-- container -->
