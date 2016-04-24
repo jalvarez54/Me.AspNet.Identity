@@ -243,3 +243,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/Me.AspNet.Identity/App_Settings/MailSettings-Common.config
+/Me.AspNet.Identity/App_Settings/connectionStrings-Release.config
+/Me.AspNet.Identity/App_Settings/appSettings-Release.config
+/Me.AspNet.Identity/App_Settings/appSettings-Debug.config
