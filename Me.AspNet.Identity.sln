@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Me.AspNet.Identity", "Me.As
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2259AB87-1A08-40CA-81FF-6B878BF8E3F8}"
 	ProjectSection(SolutionItems) = preProject
+		LICENSE.MD = LICENSE.MD
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
