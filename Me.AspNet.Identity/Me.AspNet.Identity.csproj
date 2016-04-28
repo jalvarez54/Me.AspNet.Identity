@@ -220,32 +220,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Archives\FouadBenchekroun\Scan10337Web.JPG" />
-    <Content Include="Archives\FouadBenchekroun\Scan10338.JPG" />
-    <Content Include="Archives\FouadBenchekroun\Scan10339.JPG" />
-    <Content Include="Archives\FouadBenchekroun\thumb_Scan10337Web.JPG" />
-    <Content Include="Archives\FouadBenchekroun\thumb_Scan10338.JPG" />
-    <Content Include="Archives\FouadBenchekroun\thumb_Scan10339.JPG" />
-    <Content Include="Archives\Salla\Salla_6.jpg" />
-    <Content Include="Archives\Salla\Salla_6_small.jpg" />
-    <Content Include="Archives\Yallaho\yallaho01.jpg" />
-    <Content Include="Archives\Yallaho\yallaho01_small.jpg" />
-    <Content Include="Archives\Yallaho\yallaho02.jpg" />
-    <Content Include="Archives\Yallaho\yallaho02_small.jpg" />
-    <Content Include="Archives\Yallaho\yallaho03.jpg" />
-    <Content Include="Archives\Yallaho\yallaho03_small.jpg" />
-    <Content Include="Archives\Yallaho\yallaho04.jpg" />
-    <Content Include="Archives\Yallaho\yallaho04_small.jpg" />
-    <Content Include="Archives\Yallaho\yallaho05.jpg" />
-    <Content Include="Archives\Yallaho\yallaho05_small.jpg" />
-    <Content Include="Archives\Yallaho\yallaho06.jpg" />
-    <Content Include="Archives\Yallaho\yallaho06_small.jpg" />
-    <Content Include="Archives\Yallaho\yallaho07.jpg" />
-    <Content Include="Archives\Yallaho\yallaho07_small.jpg" />
-    <Content Include="Archives\Yallaho\yallaho08.jpg" />
-    <Content Include="Archives\Yallaho\yallaho08_small.jpg" />
-    <Content Include="Archives\Yallaho\yallaho09.jpg" />
-    <Content Include="Archives\Yallaho\yallaho09_small.jpg" />
     <Content Include="Content\Avatars\BlankPhoto.jpg" />
     <Content Include="Content\Avatars\NoPhoto.png" />
     <Content Include="Content\bootstrap-datepicker.css" />
@@ -262,10 +236,10 @@
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\fancybox\blank.gif" />
     <Content Include="Content\fancybox\fancybox_buttons.png" />
-    <Content Include="Content\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Content\fancybox\fancybox_loading2x.gif" />
     <Content Include="Content\fancybox\fancybox_loading.gif" />
     <Content Include="Content\fancybox\fancybox_overlay.png" />
-    <Content Include="Content\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Content\fancybox\fancybox_sprite2x.png" />
     <Content Include="Content\fancybox\fancybox_sprite.png" />
     <Content Include="Content\flexslider.css" />
     <Content Include="Content\flexsliderCustom.css" />
@@ -327,38 +301,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Medias\Images\0403Diapositive1.JPG" />
-    <Content Include="Medias\Images\0403Diapositive2.JPG" />
-    <Content Include="Medias\Images\0403Diapositive3.JPG" />
-    <Content Include="Medias\Images\0403Diapositive4.JPG" />
-    <Content Include="Medias\Images\0402BarrioLatino.jpg" />
-    <Content Include="Medias\Images\0407-01.gif" />
-    <Content Include="Medias\Images\0407-02.gif" />
-    <Content Include="Medias\Images\0407-03.gif" />
-    <Content Include="Medias\Images\0407-04.jpg" />
-    <Content Include="Medias\Images\0407-05.jpg" />
-    <Content Include="Medias\Images\0407-06.jpg" />
-    <Content Include="Medias\Images\0407-07.jpg" />
-    <Content Include="Medias\Images\0407-08b.jpg" />
-    <Content Include="Medias\Images\0407-08.jpg" />
-    <Content Include="Medias\Images\0407-09.jpg" />
-    <Content Include="Medias\Images\0407-10.jpg" />
-    <Content Include="Medias\Images\0407-11.jpg" />
-    <Content Include="Medias\Images\0407-12.jpg" />
-    <Content Include="Medias\Images\0407-13.jpg" />
-    <Content Include="Medias\Images\0407-14.jpg" />
-    <Content Include="Medias\Images\0407-15.jpg" />
-    <Content Include="Medias\Images\0407-16.jpg" />
-    <Content Include="Medias\Images\0407-17.jpg" />
-    <Content Include="Medias\Images\0407-18.jpg" />
-    <Content Include="Medias\Images\0407-19.jpg" />
-    <Content Include="Medias\Images\0407-20.jpg" />
-    <Content Include="Medias\Images\0407-21.jpg" />
-    <Content Include="Medias\Images\0407-22.jpg" />
-    <Content Include="Medias\Images\0407-23.jpg" />
-    <Content Include="Medias\Images\0407-24.jpg" />
-    <Content Include="Medias\Images\0407-25.jpg" />
-    <Content Include="Medias\Images\0407-26.jpg" />
     <Content Include="Scripts\app\Ja.Mvc.Acdf.photo.js" />
     <Content Include="Scripts\app\Ja.Mvc.Acdf.namespace.js" />
     <Content Include="Scripts\app\Ja.Mvc.Acdf.avatar.js" />
@@ -386,6 +328,13 @@
     <Content Include="App_Settings\appSettings-Release.config" />
     <Content Include="App_Settings\connectionStrings-Release.config" />
     <Content Include="App_Settings\MailSettings-Common.config" />
+    <Content Include="sw-file-icon.png" />
+    <Content Include="_Definitions\_project.vstemplate.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="_preprocess.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\ACDF.pubxml" />
     <None Include="Properties\PublishProfiles\ACDFTEST.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -552,6 +501,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Medias\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -560,16 +510,19 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Migrations\201604231620543_Initialization.resx">
       <DependentUpon>201604231620543_Initialization.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <!--<ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>-->
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Label="TemplateBuilder">
+    <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.4.9-beta\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
@@ -581,7 +534,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>19815</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
@@ -595,6 +548,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
