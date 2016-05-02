@@ -324,10 +324,6 @@
     <Content Include="App_Settings\Distrib-appSettings-Release.config" />
     <Content Include="App_Settings\Distrib-MailSettings-Common.config" />
     <Content Include="App_Settings\Distrib-connectionStrings-Release.config" />
-    <Content Include="App_Settings\appSettings-Debug.config" />
-    <Content Include="App_Settings\appSettings-Release.config" />
-    <Content Include="App_Settings\connectionStrings-Release.config" />
-    <Content Include="App_Settings\MailSettings-Common.config" />
     <Content Include="sw-file-icon.png" />
     <Content Include="_Definitions\_project.vstemplate.xml">
       <SubType>Designer</SubType>
